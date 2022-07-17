@@ -1,0 +1,73 @@
+body{
+    background-image: url("bg1234.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc; 
+    background-size: cover;
+    height: 100%; 
+}
+#tour1{   
+    background-color:rgba(214, 214, 214, 0.486);
+    margin-left:560px;
+    margin-right:580px;
+    color:rgb(0, 0, 0);
+    padding:60px;
+    padding-left: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+}
+
+.box{
+    
+    width:250px;
+    height:20px;
+}
+
+#address{
+    height:70px;
+}
+#magic {
+width:170px;
+height: 40px;
+background-color: rgb(253, 73, 7);
+border:darkblue 2px solid;
+
+}
+label{
+    padding-top:10px;
+}
+
+#firstcircle{
+    height:500px;
+    width:600px;
+    border: 2px solid rgb(255, 0, 0);
+    Margin:30px;
+}
+
+#secondcircle{
+    height:200px;
+    width:200px;
+    border: 2px solid rgb(255, 0, 0);
+    Margin-left:660px;
+    margin-top: -400px;
+
+}
+#thirdcircle{
+    margin-left:890px;
+    border: 2px solid blue;
+    margin-top:-335px;
+    width:600px;
+    height:500px;
+}
+#vs {
+    font-size: 100px;
+    color:blue;
+}
+
+#secondcircle > h1{
+    font-size: 80px;
+    color: blue;
+}
+.tour1{
+   
+}

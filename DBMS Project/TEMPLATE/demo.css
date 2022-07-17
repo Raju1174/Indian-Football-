@@ -1,0 +1,40 @@
+.maindiv
+        {
+          width: 90%;
+          height:400px;
+          position:absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%, -50%);
+          background-image: url(https://www.pexels.com/photo/three-brown-and-black-jellyfishes-712367/);
+          
+          background-size: 100% 100%;
+          box-shadow:1px 2px 10px 5px white;  
+          animation: slider 9s infinite linear;
+        }
+body{
+    background-color: rgba(27,31,34,0.85);
+}
+h1{
+    font: size 2.1em;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(https://www.pexels.com/photo/three-brown-and-black-jellyfishes-712367/);
+    }
+    35%{
+        background-image: url(https://www.pexels.com/photo/red-liquid-in-clear-drinking-glass-7084722/);
+
+    }
+    75%{
+        background-image: url(/https://www.pexels.com/photo/portrait-photography-of-woman-looking-up-2078111//NCE_image_4.jpg);
+    }
+}
+

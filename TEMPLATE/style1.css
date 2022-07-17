@@ -1,0 +1,89 @@
+body
+{
+    background-image:url("https://media4.newsnationtv.com/resize/930_-/images/2020/03/13/isl-610.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+::selection{
+  color: #fff;
+  background: #EE7128;
+}
+.wraper{
+  max-width: 2080px;
+  margin: 0px auto;
+  padding: 0 10px;
+  position: relative;
+}
+.wraper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 7px;
+  background: #fff;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+}
+.wraper .row{
+  display: flex;
+}
+.wraper .row-1{
+  justify-content: flex-start;
+}
+.wraper .row-2{
+  justify-content: flex-end;
+}
+.wraper .row section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wraper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.center-line .scroll-icon{
+    position: fixed;
+    background: #EE7128;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #263288;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+  }
+  .center-line .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+  }

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+.{
+	margin: 0;
+	padding: 0; 
+	outline: 0;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+body{
+	height: 100vh;
+	background-image: url(back5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container{
+	position: absolute;
+	padding: 16px;
+	top: 50%
+	transform: translate(-50%,-50%);
+	width: 50%;
+	background-color: #afafafa;
+	border-radius: 8px;
+	text-transform: uppercase;
+}

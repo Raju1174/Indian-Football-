@@ -1,0 +1,234 @@
+/* Home slider css file*/
+* {
+    box-sizing: border-box;
+
+
+}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+    
+
+border: 1px black dotted;
+width:auto;
+height: auto;
+    
+    
+}
+.image {
+    vertical-align: middle;
+    object-fit: fill;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  max-width: 100%;
+  margin-top:30px;
+  height: 450px;
+  overflow:hidden;
+  border:orangered 4px solid;
+  padding-top:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  
+  
+  
+
+
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top:20px;
+  margin-top: -10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 20s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(186, 235, 154, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*  End of Home slider css file*/
+
+/*news*/
+.hew {
+
+  background-color: #0062cc;
+  color: #fff;
+  width: 200px;
+  font-size: 24px;
+  
+  height: 40px;
+  margin-left:205px;
+  padding-bottom: 40px;
+}
+.row{
+    margin-left: 300px;
+}
+.column1{
+    align-content: center;
+    float:right;
+    padding-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sponsors*/
+#sponsors{
+
+padding-left: 200px;
+margin-top:40px;
+padding-top: 150px;
+}
+
+/* About indian football federation css*/
+/* Parent Container */
+.content_img{
+    position: relative;
+    
+    float: left;
+    
+    
+    padding-left:0px;
+   }
+   
+   /* Child Text Container */
+   .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+   
+   /* Hover on Parent Container */
+   .content_img:hover{
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    width: 150px;
+    padding: 5px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+   }
+

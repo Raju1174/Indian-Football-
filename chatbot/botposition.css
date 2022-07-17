@@ -1,0 +1,9 @@
+.botimgpos{
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+}
+.botimgpos:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="navbar.css">
+
+<style>
+
+body {
+  background-image: url('bg2.jpg');
+  background-repeat: no-repeat;
+  height: 200%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  background: #263288;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+
+  display: flex;
+  /*display:overlay;*/
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border: none;
+  border-radius: 50px;
+  transition: -5s ease-in-out;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background:#EE7128;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #1c53ad;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #134aa3da;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background:#263288 ;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .w3-center{
+    margin-bottom: 40px;
+  }
+}
+  
+
+.mySlides {display:none}
+
+button {
+  color: white;
+  font-weight: bolder;
+}
+.w3-button{
+  color: white;
+  font-weight: bolder;
+}
+.demo{
+  color: white;
+  font-weight: bolder;
+}
+
+</style>
+
+
+<!-- FAVICON -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  <title>Points Table</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</head>
+
+
+<style>
+.mySlides {display:none}
+body {
+  background-image: url('bg2.jpg');
+  background-repeat: no-repeat;
+  height: 200%;
+  background-position: center;
+  background-size: cover;
+}
+
+.w3-center{
+    margin-bottom: 40px;
+  }
+
+</style>
+<body>
+
+  <div class="wrapper">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+            <div class="logo"><a href="#"><img src=logo.png width="30px" height="30px">&nbsp Indian Football
+                    Hub</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="">Tournament</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Features</label>
+                    <ul>
+                        <li><a href="WT_PROJECT_1941027\points table\table_points.html">Points Table</a></li>
+                        <!-- <li><a href="#">Leagues & Fixtures</a></li> -->
+                        <li><a href="WT_PROJECT_1941027\playercomp.php">Player Comparison</a></li>
+                        <li><a href="WT_PROJECT_1941027\teamcomp.php">Team Comparison </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-link">Development Activities</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Features</label>
+                    <ul>
+                        <!-- <li><a href="#">Find Football</a></li> -->
+                        <li><a href="DBMS Project/TEMPLATE/Player&Coach_registration.html">Player & Coach Registration</a></li>
+                        <li><a href="#">Scouting</a></li>
+                        <li><a href="DBMS Project/TEMPLATE/National_Centre_of_Excellence.html">National Center of Excellence</a></li>
+                        <li><a href="DBMS Project/TEMPLATE/grassroots.html">Grassroots</a></li>
+                        <li><a href="DBMS Project/TEMPLATE/futsal.html">Futsal</a></li>
+                        <li><a href="vote/index.php">Vote</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-link">Who are we</a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Services</label>
+                    <ul>
+                        <li><a href="TEMPLATE/history.html">History</a></li>
+                        <li><a href="TEMPLATE/Generalbody.html">General Body</a></li>
+                        <li><a href="TEMPLATE/contactus.html">Contact Us</a></li>
+                        <li><a href="TEMPLATE/Adminstration.html">Adminstration</a></li>
+                        <li><a href="TEMPLATE/committee.html">Committee</a></li>
+                        <li><a href="TEMPLATE/Documents.html">Documents</a></li>
+                        <li><a href="TEMPLATE/execcomm.html">Executive Committee</a></li>
+                        <li><a href="TEMPLATE/president.html">President</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop/shop_index.php">Shop</a></li>
+                <li style="margin-left: 10px;"><a href="search bar/searchbar.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li style="margin-left: 10px;"><a href="login/"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="w3-container">
+  <h2 style="font:; text-align: center; text-decoration: underline;text-decoration: bold; color: white;">INDIAN SUPER LEAGUE</h2>
+  <p style="text-align: center; color: white;">Points tables of every year the league was held.</p>
+</div>
+<br>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="pt_pics\1.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\2.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\3.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\4.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\5.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\6.jpg" style="width:100%">
+  <img class="mySlides" src="pt_pics\7.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">2020-2021</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2019-2020</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">2018-2019</button> 
+  <button class="w3-button demo" onclick="currentDiv(4)">2017-2018</button> 
+  <button class="w3-button demo" onclick="currentDiv(5)">2016</button> 
+  <button class="w3-button demo" onclick="currentDiv(6)">2015</button> 
+  <button class="w3-button demo" onclick="currentDiv(7)">2014</button>
+</div>
+
+
+<div id="footer">
+
+  <div id="hr1">
+      <div class="fw1">
+          <h1 style="color: white; padding-left: 120px; padding-top:30px; font-size: 50px;">Quick Links</h1>
+          <div style="color:rgb(255, 255, 255);padding-left: 120px;">
+              <a href="" title="Homepage">Home</a>
+              <br>
+              <a href="" title="About">About</a>
+              <br>
+              <a href="shop/contact.php" title="contact Us">Contact Us</a>
+              <br>
+              <a href="shop/contact.php" title="Shop">Shop</a>
+              <br>
+              <a href="vote\index.php" title="Vote">Vote</a>
+              <br>
+              <a href="news1\index.php" title="News">News</a>
+          </div>
+
+
+      </div>
+      <div class="fw1">
+
+          <h1 style="color: white; padding-left: 80px; padding-top:30px; font-size: 50px;">Development Activities</h1>
+          <div style="color:rgb(255, 255, 255);padding-left: 80px;">
+              <!-- <a href="" title="Find Football">Find Football</a> -->
+              <br>
+              <a href="" title="Player_registration">Registration</a>
+              <br>
+              <a href="" title="Scouting">Scouting</a>
+              <br>
+              <a href="" title="NCE">National Center of Excellence</a>
+              <br>
+              <a href="DBMS Project/TEMPLATE/grassroots.html" title="Grassroots">Grassroots</a><br>
+              <a href="" title="futsal">Futsal</a>
+          </div>
+
+
+
+      </div>
+
+      <div class="fw1">
+
+          <h1 style="color: white; padding-left: 100px; padding-top:30px; font-size: 30px;">Contact</h1>
+          <address style="color:white; text-align: justify; padding-left:100px; padding-right:80px; font-size: 20px;">All India Football
+              Federation,
+              Football House, Sector-19, Phase 1,
+              Dwarka, New Delhi: 110075
+              Telephone: +91-11-25308200/201/202/203/204/205
+              Fax: +91-1125308234, 25308236</address>
+          <br>
+          <div style="color:rgb(255, 255, 255);padding-left: 100px;">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <!-- <img src="" title="Instagram" alt="Instagram"> -->
+              <br>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+          </div>
+      </div>
+
+  </div>
+  <div id="hr2">
+      <h1 style="color:rgba(21, 47, 163, 0.89);;;padding-left: 600px;"><b>@ Indian Football Hub</b></h1>
+
+  </div>
+  <div id="hr3" style="color:white; padding-top:20px;">
+      <p align="Center"><b>@Team 15</b></p>
+  </div>
+
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+</body>
+</html>

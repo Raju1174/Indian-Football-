@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- FAVICON -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Documents & Regulations</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://www.the-aiff.com/assets/css/common.css?v=2.0.2" rel="stylesheet" type="text/css" />
+    <link href="https://www.the-aiff.com/assets/css/header.css?v=2.0.2" rel="stylesheet" type="text/css" />
+    <link href="https://www.the-aiff.com/assets/css/footer.css?v=2.0.2" rel="stylesheet" type="text/css" />
+    <link href="https://www.the-aiff.com/assets/css/custom.css?v=2.0.2" rel="stylesheet" type="text/css" />
+    <link href="https://www.the-aiff.com/assets/css/mobile.css?v=2.0.2" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    a:link {
+        color: blue;
+    }
+    a:visited {
+        color: orangered;
+    }
+    h2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size:xx-large;
+        font-style: italic;
+        background-color: #ffffff; 
+    }
+    body
+    {
+        background-image: url(bg15.jpg);
+        background-color: #ffffff; 
+        background-position:right 220px; 
+        background-repeat: no-repeat; 
+        
+    }
+    .doc-list
+    {
+        background-color: rgba(255, 240, 240, 0.411);
+    }
+    .col-md-8
+    {
+        padding: 0 180px;
+    }
+        .member {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    a:hover {
+        color: #111;
+        color: rgba(0, 183, 255, 0.897);
+    }
+   
+    .bg-dark{
+        background-color: #343a40!important;
+    }
+
+    nav{
+        background-color: #263288!important;
+    }
+
+    .navbar{
+        background-color: #263288!important;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../">Go Back	&#8592;</a>
+            </li>
+            
+            
+          </ul>
+      </nav>
+<!--<div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#"><img src=logo.png width="30px" height="30px">&nbsp Indian Football</a>
+                </div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tournament</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="pointstable.html">Points Table</a></li>
+                            <li><a href="#">Leagues & Fixtures</a></li>
+                            <li><a href="#">Player Comparison</a></li>
+                            <li><a href="#">Team Comparison </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Development Activities</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="findfootball.html">Find Football</a></li>
+                            <li><a href="#">Player & Coach Registration</a></li>
+                            <li><a href="#">Scouting</a></li>
+                            <li><a href="#">National Center of Excellence</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Who are we</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Services</label>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+							<li><a href="Generalbody.html">General Body</a></li>
+							<li><a href="president.html">President’s Address</a></li>
+							<li><a href="Adminstration.html">Adminstration</a></li>
+							<li><a href="committee.html">Committee</a></li>
+							<li><a href="execcomm.html">Executive Committee</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">Shop</a></li>
+                </ul>
+            </div>
+            </form>
+        </nav>
+    </div> -->
+    <div style="background:#ffa876; ">
+        <br> <br> <br>
+        <h1 align="center"> Documents &amp; Regulations</h1>
+        <br><br>
+    </div>
+    <br>
+    <div class="container">
+    <div class="col-md-8">
+    <div class="document mb-36" id="cat_missionstatutes">
+        <h2>Mission+Statutes<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-2019-22.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-2019-22.pdf" target="_blank">AIFF strategic plan 2019-22</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Constitution-Edition-2017-1.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Constitution-Edition-2017-1.pdf" target="_blank">AIFF constitution edition 2017</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Constitution.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Constitution.pdf" target="_blank">AIFF constitution</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Mission-Eleven-Million-Implementation-Agency-Brief.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Mission-Eleven-Million-Implementation-Agency-Brief.pdf" target="_blank">Mission eleven million implementation agency brief</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-budget.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-budget.pdf" target="_blank">AIFF strategic plan budget</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-2014-17.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Strategic-Plan-2014-17.pdf" target="_blank">AIFF strategic plan 2014-17</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+
+                                        <div class="document mb-36" id="cat_myas-compliance">
+        <h2>MYAS Compliance<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://the-aiff.com/media/uploads/2021/03/ACTC.20.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://the-aiff.com/media/uploads/2021/03/ACTC.20.pdf" target="_blank">ACTC 2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://the-aiff.com/media/uploads/2021/03/Adm.approvals.Women_.Girls_.20.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://the-aiff.com/media/uploads/2021/03/Adm.approvals.Women_.Girls_.20.pdf" target="_blank">Approvals Girls &amp; Women teams</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://the-aiff.com/media/uploads/2021/03/Adm.approvals.Men_.Boys_.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://the-aiff.com/media/uploads/2021/03/Adm.approvals.Men_.Boys_.pdf" target="_blank">Administrative approvals Boys &amp; Men</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+                                                                
+
+                                        <div class="document mb-36" id="cat_fifa-women-wc-2020">
+        <h2>FIFA U-17 Women&#039;s World Cup India 2020<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/01/Corrigendum-FIFA-U17-Womens-World-Cup-Football-For-all-.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/01/Corrigendum-FIFA-U17-Womens-World-Cup-Football-For-all-.pdf" target="_blank">Corrigendum- FIFA U17 Women&#039;s World Cup- Football For all</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/01/Request-For-Proposal-LOC_FIFAU17WWC2020_RFP_Events.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/01/Request-For-Proposal-LOC_FIFAU17WWC2020_RFP_Events.pdf" target="_blank">Request For Proposal - LOC FIFAU17WWC2020 RFP - Football for All - Events</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/RFP-Logistics-Agency-for-FIFA-WWC-2020.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/RFP-Logistics-Agency-for-FIFA-WWC-2020.pdf" target="_blank">RFP logistics agency for FIFA WWC 2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/FIFA-U17-Womens-World-Cup-Official-Emblem-Launch-Corrigendum-1-1.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/FIFA-U17-Womens-World-Cup-Official-Emblem-Launch-Corrigendum-1-1.pdf" target="_blank">FIFA U17 Women&#039;s world cup official emblem launch-corrigendum 1</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+
+                                        <div class="document mb-36" id="cat_laws-regulations">
+        <h2>Laws &amp; Regulations<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Registered-Intermediaries..pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Registered-Intermediaries..pdf" target="_blank">AIFF registered intermediaries as on 15 july 2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Regulations-on-the-Status-and-Transfer-of-Players-2020.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Regulations-on-the-Status-and-Transfer-of-Players-2020.pdf" target="_blank">AIFF regulations on the status &amp; transfer of players 2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Form-01-Amatuer-Consent-Form-for-2020-21-Season.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Form-01-Amatuer-Consent-Form-for-2020-21-Season.pdf" target="_blank">Form 01 Amateur consent form 2020-21</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Form-02-Amateur-Retention-Form-for-2021-22-Season.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Form-02-Amateur-Retention-Form-for-2021-22-Season.pdf" target="_blank">Form 02 Amateur retention form 2021-22</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Rules-Governing-the-Procedures-of-the-AIFF-Players-Status-Committee-2020.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/AIFF-Rules-Governing-the-Procedures-of-the-AIFF-Players-Status-Committee-2020.pdf" target="_blank">AIFF rules governing the procedures of AIFF PSC 2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/06/AIFF-Regulation-on-Working-and-Intermediaries.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/06/AIFF-Regulation-on-Working-and-Intermediaries.pdf" target="_blank">AIFF Regulations on working &amp; Intermediary</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/05/Circular-no.-05-COVID-19-Football-Regulatory-Issues-in-India.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/05/Circular-no.-05-COVID-19-Football-Regulatory-Issues-in-India.pdf" target="_blank">COVID-19 Football Regulatory issues in India (Circular no. 5)</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/02/AIFF-DISCIPLINARY-CODE.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/02/AIFF-DISCIPLINARY-CODE.pdf" target="_blank">AIFF Disciplinary Code</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Bone-Age-eligibility-4-years.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Bone-Age-eligibility-4-years.pdf" target="_blank">Bone-age eligibility - 4 years</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/BABY-LEAGUE-RULES-AND-REGULATIONS.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/BABY-LEAGUE-RULES-AND-REGULATIONS.pdf" target="_blank">Baby league rules and regulations</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Intermediary-Fee-Report-2016-17.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Intermediary-Fee-Report-2016-17.pdf" target="_blank">Intermediary fee report 2016-17</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Academy-Accreditation-Regulations-2018-19.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Academy-Accreditation-Regulations-2018-19.pdf" target="_blank">Academy accreditation regulations 2018-19</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Code-Of-Ethics-2017-Edition.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Code-Of-Ethics-2017-Edition.pdf" target="_blank">AIFF code of ethics - 2017 edition</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Junior-National-Football-Championship-for-B.C.Roy-Trophy-2016-17-Regulation.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Junior-National-Football-Championship-for-B.C.Roy-Trophy-2016-17-Regulation.pdf" target="_blank">Junior national football championship for B.c.roy trophy 2016-17 ( regulation)</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-AGE-VERIFICATION-POLICY.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-AGE-VERIFICATION-POLICY.pdf" target="_blank">AIFF age verification policy</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Hero-Federation-Cup-2016-Regulations.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Hero-Federation-Cup-2016-Regulations.pdf" target="_blank">Hero federation cup 2016 regulations</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+
+                                        <div class="document mb-36" id="cat_disciplinary-matters">
+        <h2>Disciplinary Matters<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/WADA-Prohibited-List-2017.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/WADA-Prohibited-List-2017.pdf" target="_blank">WADA - prohibited list 2017</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Decisions-taken-by-Players-Status-Comittee.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Decisions-taken-by-Players-Status-Comittee.pdf" target="_blank">Decisions taken by player&#039;s status committee</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+                                        <div class="document mb-36" id="cat_club-licensing">
+        <h2>Club Licensing<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Indian-Club-Licensing-Regulations-v6-2020-1-1.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2020/07/Indian-Club-Licensing-Regulations-v6-2020-1-1.pdf" target="_blank">Indian club licensing regulation V6-2020</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Indian-Club-Licensing-Timelines-Regulation-2019-20.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Indian-Club-Licensing-Timelines-Regulation-2019-20.pdf" target="_blank">Indian club licensing  regulation 2019-20</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Indian-Club-Licensing-Regulations-2018-19.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Indian-Club-Licensing-Regulations-2018-19.pdf" target="_blank">Indian club licensing regulation 2018-19</a>
+                                            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+
+                                        <div class="document mb-36" id="cat_aiff-calendars-2">
+        <h2>AIFF Calendars<span></span></h2>
+        <div class="doc-list">
+        <ul class="docs">
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Youth-Leagues-4-year-calendar.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Youth-Leagues-4-year-calendar.pdf" target="_blank">AIFF youth leagues - 4 year calendar</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Coaching-Calendar-2018.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/Coaching-Calendar-2018.pdf" target="_blank">Coaching calendar 2018</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-COMPETITION-CALENDAR-2016-17.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-COMPETITION-CALENDAR-2016-17.pdf" target="_blank">AIFF competition calendar 2016-17</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/COACHING-CALENDAR-2017.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/COACHING-CALENDAR-2017.pdf" target="_blank">Coaching calendar 2017</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Coaching-Calendar-for-2016.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        <div>
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-Coaching-Calendar-for-2016.pdf" target="_blank">AIFF coaching calendar for 2016</a>
+                                            </div>
+        </div>
+        </li>
+                                                                <li  class="doc-hidden" >
+        <div class="table-div">
+        <div style="width: 35px">
+        <a href="https://www.the-aiff.com/media/uploads/2019/12/AIFF-COACHING-CALENDAR-2015.pdf" target="_blank">
+        <img src="https://www.the-aiff.com/assets/images/icons/pdf.png" width="32px" height="32px">
+        </a>
+        </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <br>
+    </div>
+    </div>
+    </div>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- FAVICON -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  <title>Shop</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#"><img src=logo.png width="30px" height="30px">&nbsp Indian Football</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tournament</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="pointstable.html">Points Table</a></li>
+              <li><a href="#">Leagues & Fixtures</a></li>
+              <li><a href="#">Player Comparison</a></li>
+              <li><a href="#">Team Comparison </a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Development Activities</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="findfootball.html">Find Football</a></li>
+              <li><a href="#">Player & Coach Registration</a></li>
+              <li><a href="#">Scouting</a></li>
+              <li><a href="#">National Center of Excellence</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Who are we</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="history.html">History</a></li>
+              <li><a href="Generalbody.html">General Body</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="store.html">Shop</a></li>
+        </ul>
+      </div>
+      </form>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <section class="container content-section">
+    <h2 class="section-header">Jerseys and T-shirts</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Home Jersey 1</span>
+            <img class="shop-item-image" src="Images/j1.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">299</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title"> Away Jersey 1</span>
+            <img class="shop-item-image" src="Images/j2.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">299</span>
+                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Home Jersey 2</span>
+            <img class="shop-item-image" src="Images/j3.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">599</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Away Jersey 2</span>
+            <img class="shop-item-image" src="Images/j4.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">599</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">Gears</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Shoes</span>
+            <img class="shop-item-image" src="Images/j5.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">1999</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Football</span>
+            <img class="shop-item-image" src="Images/j6.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">699</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+</body>
+</html>

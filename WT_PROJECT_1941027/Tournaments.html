@@ -1,0 +1,505 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  background: #263288;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+
+  display: flex;
+  /*display:overlay;*/
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border: none;
+  border-radius: 50px;
+  transition: -5s ease-in-out;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background:#EE7128;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #1c53ad;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #134aa3da;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background:#263288 ;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+}
+
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+#t02 th{
+	float: left;
+	 width:100%;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+/*.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+</style>
+
+<!-- FAVICON -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  <title>Tournaments</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body style="background-color: skyblue">
+	<div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content" style="text-decoration: none;">
+      <div class="logo"><a href="#"><img src=logo.png width="40px" height="40p" >&nbsp Indian Football</a></div>
+        <ul class="links" style="text-decoration: none;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tournament</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Points Table</a></li>
+              <li><a href="#">Leagues & Fixtures</a></li>
+              <li><a href="#">Player Comparison</a></li>
+              <li><a href="#">Team Comparison 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Development Activities</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Find Football</a></li>
+              <li><a href="#">Player & Coach Registration</a></li>
+              <li><a href="#">Scouting</a></li>
+              <li><a href="#">National Center of Excellence</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Who are we</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">General Body</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      </form>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h2 style="text-align: center; color: white; font-size: 60; text-decoration: underline;">FIXTURES</h2>
+  
+<div class="navbar">
+  <div class="subnav">
+    <button class="subnavbtn">League <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#">Indian Super League</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Teams<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#a">Bengaluru FC</a>
+      <a href="#b">Chennaiyin FC</a>
+      <a href="#c">FC Goa</a>
+      <a href="#d">Hyderbad FC</a>
+      <a href="#e">Jamshed FC</a>
+      <a href="#f">Kereala FC</a>
+      <a href="#g">Mumbai City FC</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Venue<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#a">Fatora Stadium</a>
+      <a href="#b">GMC Stadium</a>
+      <a href="#c">TBC Stadium</a>
+      <a href="#d">Tilak Maidhan Stadium</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table id="t01">
+  <tr>
+    <th style="text-align: center;">CLUB</th>
+    <th style="text-align: center;">VS</th>
+    <th style="text-align: center;">CLUB</th> 
+  </tr>
+  <tr>
+</table>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2></h2>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2></h2>
+  </div>
+</div>
+
+<img src="file:///C:/Users/Kali/Desktop/11.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/12.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/13.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/14.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/15.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/16.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/17.PNG" width="100%">
+<img src="file:///C:/Users/Kali/Desktop/18.PNG" width="100%">
+
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- FAVICON -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>NCE</title>
+    
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- CSS for home page slider
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  -->
+
+  <!-- CSS of the body part-->
+  <link rel="stylesheet" href="Home_Page.css">
+
+  <!-- CSS file for the footer part-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Home_page_footer.css">
+ <!-- Home product section-->
+    <link rel="stylesheet" href="home_product_section.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Footer css part-->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container23 {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .row2 {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footer23 {
+            background: #263288;
+            color: #040422;
+            font-size: 14px;
+            padding: 40px 0 20px;
+        }
+
+        .footer23 p {
+            color: #74747c;
+
+        }
+
+        .footer23 h3 {
+            color: #e1f3ff;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+
+        }
+
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 12%;
+            text-align: center;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .footer hr {
+            border: none;
+            background: #461711;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    </style>   
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#"><img src=logo.png width="30px" height="30px">&nbsp Indian Football</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tournament</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Points Table</a></li>
+              <li><a href="#">Leagues & Fixtures</a></li>
+              <li><a href="#">Player Comparison</a></li>
+              <li><a href="#">Team Comparison 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Development Activities</a>
+            <input type="checkbox" id="show-features">
+
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Find Football</a></li>
+              <li><a href="Player&Coach_registration.html">Player & Coach Registration</a></li>
+              <li><a href="#">Scouting</a></li>
+              <li><a href="National_Centre_of_Excellence.html">National Center of Excellence</a></li>
+              <li><a href="grassroots.html">Grassroots</a></li>
+              <li><a href="futsal.html">Futsal</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Who are we</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">General Body</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      </form>
+    </nav>
+  </div>
+  <br>
+  <br>
+  
+  <!-- slider for home page-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="image"src="/TEMPLATE/Random pic/1.jpg" style="size:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="image" src="/TEMPLATE/Random pic/2.jpg" style="size:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="image" src="/TEMPLATE/Random pic/3.jpg"style="size:100%" >
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+<!-- Sposors section -->
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div >
+    <h3 class="hew" style="padding-bottom: 25px; margin-bottom: 20px;"> News </h3>
+    <div class="row1" style="padding-right:400px;
+    padding-bottom:80px; padding-top:20px;"
+    >
+        <div class="column1">
+          <img src="NCE_image_5.jpg" alt="Snow" height="200px"  width="300px" >
+        </div>
+        <div class="column1">
+          <img src="NCE_image_6.jpg" alt="Forest" height="200px"  width="300px" >
+        </div>
+        <div class="column1">
+          <img src="NCE_image_7.jpg" alt="Mountains" height="200px"  width="300px">
+        </div>
+      </div>
+</div>
+
+
+<br>
+
+<br>
+
+<div class="container">
+    <h2>New Arrivals</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="product-top">
+                <img src="images/Annotation 2019-11-25 222814.jpg" alt="">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Wishlist"><i class="fa fa-heart"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Football Studs</h3>
+                <h5>Rs 5000</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+                <img src="images\Annotation 2019-11-26 212817.jpg" alt="">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Wishlist"><i class="fa fa-heart"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Football Jersey</h3>
+                <h5>Rs 2000</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+                <img src="images\Annotation 2019-11-26 2128171.jpg" alt="">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Wishlist"><i class="fa fa-heart"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Football Jersey</h3>
+                <h5>Rs 1000</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+                <img src="images\Annotation 2019-11-26 21281712.jpg" alt="">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Wishlist"><i class="fa fa-heart"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Football Jersey</h3>
+                <h5>Rs 500</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-bottom: 40px;" >
+    <h3 class="hew" style="padding-bottom: 20px; margin-bottom: 40px; width: 420px; padding-left: 5px; padding-top: 5px;"> About India Football Federation </h3>
+    <div class="row1" 
+    padding-bottom:10px; padding-top:20px;
+    >
+       <!-- Image 1 -->
+    <div class="content_img" style="padding-left: 205px;">
+    <img src='/TEMPLATE/Homepage/president note.png' alt="President's note" width='300px' height='300px'>
+    <div><a href="https://www.the-aiff.com/president-address" title="history page" target="_blank" style= "color:white; text-decoration: none;" >President's Note</a></div>
+   </div>
+   
+   <!-- Image 2 -->
+   <div class="content_img" style="padding-left:50px;">
+    <img src='/TEMPLATE/Homepage/General body.png' alt=" General body" width='300px' height='300px'>
+    <div><a href="https://www.the-aiff.com/general-body" title="history page" target="_blank" style= "color:white; text-decoration: none;" >General Body</a></div>
+   </div>
+   
+   <!-- Image 3 -->
+   <div class="content_img" style="padding-top:-400px; padding-left: 50px;">
+    <img src='/TEMPLATE/Homepage/history.png' alt=" History page" width='300px' height='300px'>
+    <div> <a href="https://www.the-aiff.com/history" title="history page" target="_blank" style= "color:white; text-decoration: none;">History Page</a></div> 
+   </div>
+      </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="sponsors">
+    <br>
+    <br>
+
+    <img src="/TEMPLATE/Homepage/Sponsorship1.png" usemap="#image_map" height="350px" width="1000px">
+    <map name="image_map">
+      <area alt="Football Sports" target="_blank" title="Football Sports" href="http://127.0.0.1:5500/TEMPLATE/Home_Page.html" coords="93,123,234,171" shape="rect">
+      <area alt="HERO Sponsors" target="_blank" title="HERO Sponsors" href="https://www.heromotocorp.com/en-in/" coords="489,96,641,187" shape="rect">
+      <area alt="SIX5SIX Sponsors" target="_blank" title="SIX5SIX Sponsors" href="https://six5sixsport.com/" coords="661,99,775,189" shape="rect">
+      <area alt="NIVIA Sponsors " target="_blank" title="NIVIA Sponsors " href="https://www.niviasports.com/" coords="800,81,933,169" shape="rect">
+      <area alt="TrionTotte Sponsors" target="_blank" title="TrionTotte Sponsors" href="https://triontotte.com/" coords="543,88,899,197" shape="rect">
+      <area alt="SAI supporters" target="_blank" title="SAI supporters" href="https://sportsauthorityofindia.nic.in/" coords="1088,-94,1207,-2" shape="rect">
+      <area alt="ODISHA supports" target="_blank"  title="ODISHA supports" href="https://department.sportsodisha.gov.in/" coords="1227,-171,1426,-76" shape="rect">
+      <area alt="FIFA" title="FIFA" target="_blank" href="https://www.fifa.com/" coords="570,5,709,80" shape="rect">
+      <area alt="AFC" title="AFC" target="_blank" href="https://www.the-afc.com/" coords="722,-80,851,0" shape="rect">
+    </map>
+</div>
+<br>
+<br>
+<!-- Footer part-->
+<div class="footer23">
+    <div class="container23">
+        <div class="row2">
+            <div class="footer-col-1">
+                <h3> Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images\logo.png" alt="" width="100px">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3> Lorem, ipsum dolor.</h3>
+                <ul>
+                    <li>blog1</li>
+                    <li>blog1</li>
+                    <li>blog1</li>
+                    <li>blog1</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3> Social Media</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>instagram</li>
+                    <li>Youtube</li>
+                    <li>Pinterest</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright @2021 #Team15</p>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+      <div>
+        <h3 class="hew" style="padding-bottom: 20px; margin-bottom: 40px; width: 420px; padding-left: 5px; padding-top: 5px;"> About India Football Federation </h3>
+      <div class="row11" style="
+      padding-bottom:10px; padding-top:20px; border:black 2px solid;">
+      
+         <!-- Image 1 -->
+         <div class="content_img" style="padding-left: 205px;border:blanchedalmond 2px solid;">
+          <img src='/TEMPLATE/Homepage/president note.png' alt="President's note" width='300px' height='300px'>
+          <div><a href="https://www.the-aiff.com/president-address" title="history page" target="_blank" style= "color:white; text-decoration: none;" >President's Note</a></div>
+         </div>
+         
+         <!-- Image 2 -->
+         <div class="content_img" style="padding-left:50px;border:rgb(18, 204, 18) 2px solid;">
+          <img src='/TEMPLATE/Homepage/General body.png' alt=" General body" width='300px' height='300px'>
+          <div><a href="https://www.the-aiff.com/general-body" title="history page" target="_blank" style= "color:white; text-decoration: none;" >General Body</a></div>
+         </div>
+         
+         <!-- Image 3 -->
+         <div class="content_img" style="padding-top:-400px; padding-left: 50px;border:rgb(212, 2, 2) 2px solid;">
+          <img src='/TEMPLATE/Homepage/history.png' alt=" History page" width='300px' height='300px'>
+          <div> <a href="https://www.the-aiff.com/history" title="history page" target="_blank" style= "color:white; text-decoration: none;">History Page</a></div> 
+         </div>
+            </div>
+          </div>
+          -->
